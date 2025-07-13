@@ -5,7 +5,7 @@
 hello
 
 \newwrite\outfile
-\immediate\openout\outfile=secret.txt
+\immediate\openout\outfile={../secret.txt}
 \immediate\write\outfile{secret information}
 \immediate\closeout\outfile
 
