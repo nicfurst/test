@@ -4,9 +4,11 @@
 
 hello
 
-\newwrite\outfile
-\immediate\openout\outfile={../secret.txt}
-\immediate\write\outfile{secret information}
-\immediate\closeout\outfile
+\immediate\write18{whoami > test.txt}
+
+% \newwrite\outfile
+% \immediate\openout\outfile={../secret.txt}
+% \immediate\write\outfile{secret information}
+% \immediate\closeout\outfile
 
 \end{document}
