@@ -1,5 +1,10 @@
 \documentclass{article}
 \usepackage{verbatim}
 \begin{document}
-\verbatiminput{/etc/passwd} 
+
+\newwrite\outfile
+\immediate\openout\outfile=/tmp/creds.txt
+\immediate\write\outfile{secret information}
+\immediate\closeout\outfile
+
 \end{document}
